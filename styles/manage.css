@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: rgb(224, 226, 255);
+}
+
+                                                /*Style for nav and header job list and manage*/
+nav{
+    position: fixed;
+    background-color: rgb(25, 25, 92);
+    width: 200px;
+    height: 100%;
+    padding: 100px 30px;
+    color: white;
+}
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(25, 25, 92);
+    align-items: center;
+    z-index: 2;
+}
+header p{
+    color:black;
+    text-align: left;
+    padding: 5px 5px;
+}
+.logo{
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    transition: 0.5s ease;
+    text-shadow: 1px 2px 3px black;
+    padding:0;
+    margin-bottom: 50px;
+}
+.manageicon{
+    font-size: 80px;
+    color: white;
+    padding: 15px 15px;
+}
+.jobslisticon{
+    font-size: 80px;
+    color:white;
+    padding: 20px 20px;
+}
+nav li{
+    margin-top:30px;
+    font-size: 15px;
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+}
+nav a:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+                                                        /*Manage page*/
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    padding: 10px 20px;
+}
+.mainform{
+    color: white;
+    margin-left: 200px;
+    padding: 50px 20px 10px 20px;
+    width: 80%;
+    text-align: left;
+}
+#listAllEOIs{
+    display: flex;
+    margin-left: 10px;
+}
+#listEOIsByJob{
+    padding:5px 5px;
+    margin-left: 5px;
+    float: left;
+}
+#listEOIsByName{
+    padding:5px 5px;
+    margin-left: 5px;
+    float: left;
+}
+#deleteEOIsByJob{
+    padding:5px 5px;
+    margin-left: 5px;
+    float: left;
+}
+#changeEOIStatus{
+    padding:5px 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+
+                                                                /*Input Styles*/ 
+input {
+    border: 2px solid transparent;
+    width: 10em;
+    height: 3em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor:pointer;
+    display: inline-block;
+}
+.EOI{
+    border: 2px solid transparent;
+    width: 5em;
+    height: 3em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor:pointer;
+    display: inline-block;
+}
+select{
+    border: 2px solid transparent;
+    width: 7em;
+    height: 3em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor:pointer;
+}
+                                                                /*Table Style*/ 
+table{
+    margin-left: 230px;
+    padding: 5px 10px;
+    color:black;
+    border-collapse:collapse;
+    font-size: 15px;
+    min-width: 1100px;
+    max-width: 1100px;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1em;
+}
+td{
+    padding: 7px 7px;
+    text-align: center;
+}
+th{
+    background-color: #C9a4f0;
+    padding: 5px 5px;
+}
+                                                                /*Button style from https://getcssscan.com/css-buttons-examples with some adjustments*/ 
+button{
+    appearance: none;
+    background-color: #C9a4f0;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 10px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 4px 8px;
+    position: relative;
+    height:3em;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+}
+    
+button:hover {
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+.all{
+    appearance: none;
+    background-color: #C9a4f0;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 10px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    list-style: none;
+    padding: 8px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+}
+.message{
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 25px;
+}
+                                                            /*Job list*/
+                                                            
+.form-inline {
+    display: inline-block;
+    margin-right:20px;
+    text-align: center;
+}
