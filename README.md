@@ -49,7 +49,7 @@ Make sure the following software is installed:
 
 1. Start **Apache** and **MySQL** in your XAMPP or MAMP control panel.
 2. Go to `http://localhost/phpmyadmin`
-3. Click **Import** and upload `assign2.sql` (included in this repo).
+3. Click **Import** and upload `database.sql` (included in this repo).
 4. This will create a database and the required `eoi` table.
 
 #### Option B – Using MySQL CLI
@@ -58,7 +58,7 @@ Make sure the following software is installed:
 mysql -u root -p
 CREATE DATABASE assign2_db;
 USE assign2_db;
-SOURCE path/to/assign2.sql;
+SOURCE path/to/database.sql;
 ```
 
 ### 4. Configure Database Connection
